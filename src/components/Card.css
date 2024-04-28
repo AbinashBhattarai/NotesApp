@@ -1,0 +1,107 @@
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: start;
+}
+.card{
+  background-color: var(--bg-color-secondary);
+  height: 16rem;
+  width: 16rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 0.2rem var(--text-color-primary);
+}
+.content{
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 0.3rem 0 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.content-head{
+  display: flex;
+  flex-direction: column;
+}
+.content-title{
+  max-height: 3rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+.content-title input{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color-primary);
+  max-width: 100%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  text-overflow: ellipsis;
+  background-color: white;
+}
+.content-body{
+  height: 8rem;
+}
+.content-body textarea{
+  font-size: 1.1rem;
+  font-weight: 450;
+  color: var(--text-color-primary);
+  text-overflow: ellipsis;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: scroll;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  background-color: var(--bg-color-secondary);
+}
+.content-action{
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color-primary);
+  padding: 0.7rem 0.3rem 0.5rem 0.3rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.content-action-icon{
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0px;
+  padding: 0.3rem;
+  background-color: rgb(216, 216, 216);
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease;
+}
+.content-action-icon div{
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-top: 0.2rem;
+  padding: 0.2rem;
+}
+.content-action-icon div:active{
+  background-color: rgb(216, 216, 216);
+}
+.content-action-icon div span{
+  margin-right: 0.1rem;
+}
+.material-symbols-outlined{
+  cursor: pointer;
+  position: relative;
+}
+.material-symbols-outlined:hover .content-action-icon{
+  transform: scale(1);
+}
+.save{
+  color: var(--bg-color-primary);
+}
+  
+
+
+
